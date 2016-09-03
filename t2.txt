@@ -1,0 +1,2 @@
+SELECT * FROM JOURNAL WHERE invitee_stub ='c71fee47-6203-4641-ada5-0df57ca60a1b' ORDER BY last_modified_date DESC ;
+SELECT * FROM JOURNAL_DETAIL WHERE jrn_stub IN (SELECT jrn_stub FROM JOURNAL WHERE invitee_stub ='c71fee47-6203-4641-ada5-0df57ca60a1b') ORDER BY last_modified_date DESC 
